@@ -1,0 +1,98 @@
+h1{
+  font-family: "Roboto", sans-serif;
+}
+
+p{
+  font-family: "Roboto", sans-serif;
+  font-weight:300;
+}
+
+a{
+  font-family: "Roboto", sans-serif;
+  font-weight:300;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  background: url("rosewallpaper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header{
+  background-color: white;
+  padding: 2%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.topnav{
+  overflow: hidden;
+  background-color: grey;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.topnav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover{
+  background-color: #555;
+  color:thistle;
+}
+
+.column{
+  float:left;
+  width: 33.33%;
+  padding: 5%;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.row{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.row:after{
+  content: " ";
+  display: table;
+  left: 50%;
+  /*Removes rows for other items after*/
+  clear: both;
+}
+
+a{
+  color: #ff85a2;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+@media  screen and (max-width: 600px) {
+  .column{
+    width: 100%;
+  }
+
+}
