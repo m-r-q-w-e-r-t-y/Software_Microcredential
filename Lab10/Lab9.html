@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 10</title>
+
+    <link id="s1" rel="stylesheet" type="text/css" href="Lab9.css" disabled>
+    <link id="s2" rel="stylesheet" type="text/css" href="Lab9Inverted.css" disabled>
+    <link id="s3" rel="stylesheet" type="text/css" href="Lab9Clownish.css" disabled>
+    <link id="s4" rel="stylesheet" type="text/css" href="Lab9Serious.css" disabled>
+    <link id="s5" rel="stylesheet" type="text/css" href="Lab9Romantic.css" disabled>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>Banner</h1>
+      <p>Lab 9 by Anthony Mendez</p>
+      <p>Resize the browser window to see the reponsive effect.</p>
+
+    </div>
+    <div class = "topnav">
+      <a href="https://www.linkedin.com/in/anthony00/">LinkedIn</a>
+      <a href="https://anthonym.webflow.io">Personal Site</a>
+      <a href="https://github.com/m-r-q-w-e-r-t-y">GitHub</a>
+    </div>
+
+    <div class = "row">
+        <div class = "column">
+          <h1>Column 1</h1>
+          <p id = "demo">
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+          </p>
+          <button type="button" onclick="myFunction()"><img src="rose.png" alt="Rose"></button>
+        </div>
+
+        <div class = "column">
+          <!-- <form name = "alertform">
+           Enter your name:
+           <input type = "text"  name = "yourname">
+           <input type = "button" value = "Go" onClick = "window.alert('Hello '+ document.alertform.yourname.value);">
+          </form>
+
+          <form name = "addressform">
+            Name: <input name = "yourname"><br>
+            Phone: <input name = "phone"><br>
+            Email: <input name = "email"><br>
+          </form> -->
+
+          <!-- <form name = "fortuneTeller">
+            Name:
+            <input type="text" name="name" value=""><br>
+            Job:
+            <input type="text" name="job" value=""><br>
+            Location:
+            <input type="text" name="location" value=""><br>
+            Ideal partner:
+            <input type="text" name="ideal" value=""><br>
+            Kids:
+            <input type="text" name="kids" value=""><br>
+
+            <input type = "button" value = "Go"
+            onClick = "window.alert(document.fortuneTeller.name.value + ' works as a ' +
+            document.fortuneTeller.job.value + ' in ' +
+            document.fortuneTeller.location.value + '. ' + document.fortuneTeller.name.value  +
+            ' will have ' + document.fortuneTeller.kids.value + ' kids with ' + document.fortuneTeller.ideal.value + '.' );">
+          </form> -->
+
+          <h1>Column 2</h1>
+          <p id = "demo2">
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+          </p>
+          <button type="button" onclick="myFunction2()"><img src="rose.png" alt="Rose"></button>
+         </div>
+
+        <div class="column">
+          <h1>Column 3</h1>
+          <p id = "demo3">
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+            Click on the rose to see a special message!<br>
+          </p>
+          <button type="button" onclick="myFunction3()"><img src="rose.png" alt="Rose"></button>
+        </div>
+    </div>
+
+    <div class="header">
+      <h1>Same Page Different Styles</h1>
+      <p>This is a demonstration of how different stylesheets can change.</p>
+      <a href="#" onclick="reStyle(1)">Stylesheet1</a>
+      <a href="#" onclick="reStyle(2)">Stylesheet2</a>
+      <a href="#" onclick="reStyle(3)">Stylesheet3</a>
+      <a href="#" onclick="reStyle(4)">Stylesheet4</a>
+      <a href="#" onclick="reStyle(5)">Stylesheet4</a>
+    </div>
+
+    <script>
+      function myFunction(){
+        document.getElementById("demo").innerHTML = "Hello Javascript"
+      }
+      function myFunction2(){
+        document.getElementById("demo2").innerHTML = "Welcome"
+      }
+      function myFunction3(){
+        document.getElementById("demo3").innerHTML = "To HTML"
+      }
+
+      function reStyle(n){
+        document.getElementById("s"+n).removeAttribute('disabled');
+        if (n==1){
+          document.getElementById("s2").disabled = true;
+          document.getElementById("s3").disabled = true;
+          document.getElementById("s4").disabled = true;
+          document.getElementById("s5").disabled = true;
+        }
+        else if (n==2) {
+          document.getElementById("s1").disabled = true;
+          document.getElementById("s3").disabled = true;
+          document.getElementById("s4").disabled = true;
+          document.getElementById("s5").disabled = true;
+        }
+        else if (n==3) {
+          document.getElementById("s1").disabled = true;
+          document.getElementById("s2").disabled = true;
+          document.getElementById("s4").disabled = true;
+          document.getElementById("s5").disabled = true;
+        }
+        else if (n==4) {
+          document.getElementById("s1").disabled = true;
+          document.getElementById("s2").disabled = true;
+          document.getElementById("s3").disabled = true;
+          document.getElementById("s5").disabled = true;
+        }
+        else {
+          document.getElementById("s1").disabled = true;
+          document.getElementById("s2").disabled = true;
+          document.getElementById("s3").disabled = true;
+          document.getElementById("s4").disabled = true;
+        }
+      }
+      // x = prompt("Enter Number", " ")
+      // document.write("Luna <br>", x)
+    </script>
+
+  </body>
+</html>
