@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 10</title>
+    <!-- <link rel="stylesheet" type="text/css" href="Lab9.css">
+    <link rel="stylesheet" type="text/css" href="Lab9Inverted.css">
+    link rel="stylesheet" type="text/css" href="Lab9Clownish.css"
+    <link rel="stylesheet" type="text/css" href="Lab9Serious.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="Lab9Romantic.css"> -->
+    <link rel="stylesheet" type="text/css" href="Lab9Romantic.css">
+    <script src="script.js"></script>
+    <script src="ENTER THE NAME OF THE JS FILE HERE"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="header">
+      <h1>Banner</h1>
+      <p>Lab 9 by Anthony Mendez</p>
+      <p>Resize the browser window to see the reponsive effect</p>
+    </div>
+    <div class = "topnav">
+      <a href="https://www.linkedin.com/in/anthony00/">LinkedIn</a>
+      <a href="https://anthonym.webflow.io">Personal Site</a>
+      <a href="https://github.com/m-r-q-w-e-r-t-y">GitHub</a>
+    </div>
+
+    <div class = "row">
+        <div class = "column">
+          <h1>Column 1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <img src="rose.png" alt="Rose">
+        </div>
+
+        <div class = "column">
+          <!-- <form name = "alertform">
+           Enter your name:
+           <input type = "text"  name = "yourname">
+           <input type = "button" value = "Go" onClick = "window.alert('Hello '+ document.alertform.yourname.value);">
+          </form>
+
+          <form name = "addressform">
+            Name: <input name = "yourname"><br>
+            Phone: <input name = "phone"><br>
+            Email: <input name = "email"><br>
+          </form> -->
+
+          <form name = "fortuneTeller">
+            Name:
+            <input type="text" name="name" value=""><br>
+            Job:
+            <input type="text" name="job" value=""><br>
+            Location:
+            <input type="text" name="location" value=""><br>
+            Ideal partner:
+            <input type="text" name="ideal" value=""><br>
+            Kids:
+            <input type="text" name="kids" value=""><br>
+
+            <input type = "button" value = "Go"
+            onClick = "window.alert(document.fortuneTeller.name.value + ' works as a ' +
+            document.fortuneTeller.job.value + ' in ' +
+            document.fortuneTeller.location.value + '. ' + document.fortuneTeller.name.value  +
+            ' will have ' + document.fortuneTeller.kids.value + ' kids with ' + document.fortuneTeller.ideal.value + '.' );">
+          </form>
+
+          <img src="rose.png" alt="Rose">
+        </div>
+
+        <div class="column">
+          <h1>Column 3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <img src="rose.png" alt="Rose">
+        </div>
+    </div>
+
+    <div class="header">
+      <h1>Same Page Different Styles</h1>
+      <p>This is a demonstration of how different stylesheets can change.</p>
+      <a href="#" onclick="reStyle(); return false">Stylesheet1</a>
+      <a href="#" onclick="reStyle(); return false">Stylesheet2</a>
+      <a href="#" onclick="reStyle(); return false">Stylesheet3</a>
+      <a href="#" onclick="reStyle(); return false">Stylesheet4</a>
+    </div>
+
+    <button type="button" onclick="myFunction()">Click me!</button>
+    <p id = "demo">Demo</p>
+
+    <script>
+      function myFunction(){
+        document.getElementById("demo").innerHTML = "Hello Javascript"
+      }
+
+      // x = prompt("Enter Number", " ")
+      // document.write("Luna <br>", x)
+
+      x = 3
+      if(x < 0){
+        alert("negative")
+      }
+      alert("positive")
+
+    </script>
+
+  </body>
+</html>
