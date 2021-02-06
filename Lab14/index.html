@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css"
+  </head>
+  <center>
+  <body>
+    <script src="script.js"></script>
+    <h1>Welcome to Target</h1>
+    	<table border= "5" style="background-color:aliceblue;">
+      <th style="color:mediumslateblue;"> Items </th>
+      <th style="color:teal;"> Price </th>
+      <th style="color:firebrick;"> Add </th>
+      <th style="color:firebrick;"> Remove </th>
+      <th style="color:firebrick;"> Subtotal </th>
+
+      <tr>
+					<td> Pasta <input id="pastaInput" type="number"> </input> </td>
+					<td> $10 </td>
+					<td> <button type="button" onclick="addToCart(10)" class="button-property">Add to Cart</button> </td>
+          <td>  <button type="button" onclick="remove(10)" class="button-property">Remove</button> </td>
+          <td id="pasta" class="column4"> $0 </td>
+			</tr>
+
+      <tr>
+					<td> Rice <input id="riceInput" type="number"> </input></td>
+					<td> $50 </td>
+					<td>  <button type="button" onclick="addToCart(50)" class="button-property">Add to Cart</button> </td>
+          <td>  <button type="button" onclick="remove(50)" class="button-property">Remove</button> </td>
+           <td id="rice" class="column4"> 0 </td>
+			</tr>
+
+      <tr>
+					<td> Eggs <input id="eggsInput" type="number"> </input></td>
+					<td> $5 </td>
+					<td>  <button type="button" onclick="addToCart(5)" class="button-property">Add to Cart</button> </td>
+          <td>  <button type="button" onclick="remove(5)" class="button-property">Remove</button> </td>
+           <td id="eggs" class="column4"> 0 </td>
+			</tr>
+
+      <tr>
+					<td> Chicken <input id="chickenInput" type="number"> </input> </td>
+					<td> $30 </td>
+					<td>  <button type="button" onclick="addToCart(30)" class="button-property">Add to Cart</button></td>
+          <td>  <button type="button" onclick="remove(30)" class="button-property">Remove</button> </td>
+           <td id="chicken" class="column4"> 0 </td>
+			</tr>
+
+      <tr>
+					<td> Cheese <input id="cheeseInput" type="number"> </input></td>
+					<td> $8 </td>
+					<td>  <button type="button" onclick="addToCart(8)" class="button-property">Add to Cart</button> </td>
+          <td>  <button type="button" onclick="remove(8)" class="button-property">Remove</button> </td>
+           <td id="cheese" class="column4"> 0 </td>
+			</tr>
+    </table><br>
+
+    <button type="button" onclick="checkOut()" class="button-property">Checkout</a></button>
+
+    <button type="button" onclick="display()" class="button-property">Display Total</a></button>
+    <p id = "ninjaDesc">""</p>
+  </body>
+  </center>
+</html>
